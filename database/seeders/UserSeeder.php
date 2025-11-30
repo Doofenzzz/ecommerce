@@ -11,8 +11,8 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'name' => 'Admin TokoKu',
-            'email' => 'admin@tokoku.com',
+            'name' => 'Admin',
+            'email' => 'admin@ecom.com',
             'password' => Hash::make('password'),
             'role' => 'admin',
             'is_active' => true,
@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Kasir 1',
-            'email' => 'kasir@tokoku.com',
+            'email' => 'kasir@ecom.com',
             'password' => Hash::make('password'),
             'role' => 'cashier',
             'is_active' => true,
